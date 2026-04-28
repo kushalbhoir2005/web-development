@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #a8e6cf, #dcedc1); /* soft gradient green */
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  height: 5rem;
+  line-height: 5rem;
+  color: #fdfdfd; /* soft white */
+  background-color: #333; /* dark gray instead of black */
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding-top: 35px;
+}
+
+img {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.choice {
+  height: 165px;
+  width: 165px;
+  border-radius: 50%;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.choice:hover {
+  opacity: 0.7;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.reset {
+  padding: 1.3rem 2rem;
+  background-color: #333; /* dark gray button */
+  color: #fdfdfd;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.reset:hover {
+  background-color: #555;
+}
+
+.score-board {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  gap: 5rem;
+  color: #333;
+}
+
+#user-score,
+#comp-score {
+  font-size: 4rem;
+  text-align: center;
+  color: #2e7d32; /* green tone for score */
+}
+
+.msg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#msg {
+  background-color: #2e7d32; /* green message box */
+  height: 3rem;
+  line-height: 3rem;
+  color: #fdfdfd;
+  border-radius: 8px;
+  font-size: 2rem;
+  margin-top: 2rem;
+  display: inline;
+  padding: 0 1rem;
+}
